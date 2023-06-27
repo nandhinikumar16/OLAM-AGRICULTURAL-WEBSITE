@@ -1,0 +1,61 @@
+:root {
+   --black: #161616;
+   --dark-green: #3c5238;
+   --green: #49b835;
+   --light-green: #DDFFBC;
+   --light-yellow: #f7f7ea;
+   --light-yellow-shadow: #bdbdac;
+   --light-grey: #cecdcd;
+   --white: #f8f8f6;
+
+   --green-hover: #3da82a;
+   --dark-green-hover: #2a8b1b;
+
+   --font3: 1.3rem;
+   --font2: 2.4rem;
+   --font1: 3.7rem;
+   --font-logo: 1.75rem;
+
+   --title-font: 'Bitter', serif;
+   --regular-font: 'Gantari', sans-serif;
+}
+
+body {
+   font-family: var(--regular-font);
+   color: var(--black);
+}
+
+.invisible {
+   display: none;
+}
+
+.button {
+   color: var(--white);
+   background-color: var(--green);
+   transition: 100ms background-color;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: var(--green-hover);
+}
+
+@media screen and (min-width: 768px) {
+   :root {
+      --font1: 4.2rem;
+      --font-logo: 2rem;
+   }
+}
+
+@media screen and (min-width: 1440px) {
+   :root {
+      --font3: 1.4rem;
+      --font2: 2.8rem;
+      --font1: 4.5rem;
+      --font-logo: 2.3rem;
+   }
+
+   body {
+      font-size: 1.05rem;
+   }
+}
